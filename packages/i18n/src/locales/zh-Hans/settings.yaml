@@ -399,6 +399,94 @@ pages:
     vision:
       description: 视觉
       title: 视觉
+      unsupported:
+        title: 视觉仅支持桌面端
+        description: 请使用 stage-tamagotchi（Electron）启动 RTC 视觉会话。
+      sections:
+        backend:
+          title: 后端
+          description: 选择视觉识别使用的运行后端。
+          label: 视觉后端
+          doubao-rtc: 豆包 RTC
+          gpt-http: GPT HTTP
+        credentials:
+          title: 凭据配置
+          description: 配置火山 RTC 与模型相关凭据。
+          app-id: App ID
+          app-key: App Key
+          access-key-id: Access Key ID
+          secret-access-key: Secret Access Key
+          base-url: Base URL
+          region: Region
+          model-name: 模型名称
+        parameters:
+          title: 运行参数
+          description: 调整识别与模型行为参数。
+          max-tokens: 最大 Token
+          temperature: Temperature
+          top-p: Top P
+          history-length: 历史长度
+          enable-vision: 启用视觉快照
+          stream-type: 视觉流类型
+          image-detail: 图像细节
+          detail-low: 低
+          detail-high: 高
+          detail-auto: 自动
+          height: 快照高度
+          interval: 快照间隔（毫秒）
+          images-limit: 快照数量上限
+        behavior:
+          use-remote-tts: 使用 RTC 远端语音播放
+          auto-speak-subtitle: 自动朗读助手字幕
+          idle-enabled: 启用静默自动读屏
+          idle-timeout-ms: 静默超时（毫秒）
+          idle-interrupt-mode: 静默中断模式
+          idle-prompt: 静默触发提示词
+        gpt:
+          title: GPT 配置
+          description: 配置 GPT 视觉接口请求参数。
+          base-url: Base URL
+          api-key: API Key
+          model: 模型
+          max-tokens: 最大 Token
+          temperature: Temperature
+          top-p: Top P
+          history-length: 字幕历史长度
+          image-height: 图像高度（最大 720）
+        session:
+          title: 会话控制
+          description: 启动或停止 RTC 会话与屏幕共享。
+          gpt-no-screen-share: GPT HTTP 后端不支持 RTC 屏幕共享。
+          configured: 已配置
+          not-configured: 缺少必填凭据
+          save-config: 保存配置
+          start: 启动会话
+          stop: 停止会话
+          start-share: 开始共享
+          stop-share: 停止共享
+          saved-config: 运行时配置已更新。
+          started: 视觉会话已启动。
+          stopped: 视觉会话已停止。
+          started-share: 屏幕共享已启动。
+          stopped-share: 屏幕共享已停止。
+        capture:
+          title: 手动识别
+          description: 捕获一次屏幕并发送给视觉模型识别。
+          prompt: 提示词
+          default-prompt: 默认提示词
+          interrupt-mode: 中断模式
+          ask: 捕获并识别
+          result-success: '图像发送成功，分组：{groupId}'
+          result-failed: 图像发送失败。
+        runtime:
+          title: 运行状态
+          connected: 已连接
+          sharing: 正在共享屏幕
+          room-id: 房间 ID
+          user-id: 用户 ID
+          task-id: 任务 ID
+          bot-user-id: Bot 用户 ID
+          last-subtitle: 最新字幕
     x:
       description: X / Twitter 的浏览和使用
       title: X / Twitter

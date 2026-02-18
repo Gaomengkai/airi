@@ -414,6 +414,94 @@ pages:
     vision:
       description: Vision
       title: Vision
+      unsupported:
+        title: Vision is only available in desktop app
+        description: Please use stage-tamagotchi (Electron) to start RTC vision session.
+      sections:
+        backend:
+          title: Backend
+          description: Choose the runtime backend for vision understanding.
+          label: Vision Backend
+          doubao-rtc: Doubao RTC
+          gpt-http: GPT HTTP
+        credentials:
+          title: Credentials
+          description: Configure Volcengine RTC and model credentials.
+          app-id: App ID
+          app-key: App Key
+          access-key-id: Access Key ID
+          secret-access-key: Secret Access Key
+          base-url: Base URL
+          region: Region
+          model-name: Model Name
+        parameters:
+          title: Runtime Parameters
+          description: Tune recognition and model behavior.
+          max-tokens: Max Tokens
+          temperature: Temperature
+          top-p: Top P
+          history-length: History Length
+          enable-vision: Enable Vision Snapshot
+          stream-type: Vision Stream Type
+          image-detail: Image Detail
+          detail-low: Low
+          detail-high: High
+          detail-auto: Auto
+          height: Snapshot Height
+          interval: Snapshot Interval (ms)
+          images-limit: Snapshot Images Limit
+        behavior:
+          use-remote-tts: Use RTC remote TTS audio output
+          auto-speak-subtitle: Auto speak assistant subtitle
+          idle-enabled: Enable idle auto-check
+          idle-timeout-ms: Idle timeout (ms)
+          idle-interrupt-mode: Idle interrupt mode
+          idle-prompt: Idle prompt
+        gpt:
+          title: GPT Settings
+          description: Configure GPT vision API request parameters.
+          base-url: Base URL
+          api-key: API Key
+          model: Model
+          max-tokens: Max Tokens
+          temperature: Temperature
+          top-p: Top P
+          history-length: Subtitle History Length
+          image-height: Image Height (max 720)
+        session:
+          title: Session Control
+          description: Start or stop RTC session and screen sharing.
+          gpt-no-screen-share: GPT HTTP backend does not support RTC screen sharing.
+          configured: Configured
+          not-configured: Missing required credentials
+          save-config: Save Config
+          start: Start Session
+          stop: Stop Session
+          start-share: Start Share
+          stop-share: Stop Share
+          saved-config: Runtime config updated.
+          started: Vision session started.
+          stopped: Vision session stopped.
+          started-share: Screen sharing started.
+          stopped-share: Screen sharing stopped.
+        capture:
+          title: Manual Capture
+          description: Capture the selected screen once and ask the vision model.
+          prompt: Prompt
+          default-prompt: Default Prompt
+          interrupt-mode: Interrupt Mode
+          ask: Capture And Ask
+          result-success: 'Image sent successfully. Group: {groupId}'
+          result-failed: Failed to send image.
+        runtime:
+          title: Runtime State
+          connected: Connected
+          sharing: Screen Sharing
+          room-id: Room ID
+          user-id: User ID
+          task-id: Task ID
+          bot-user-id: Bot User ID
+          last-subtitle: Last Subtitle
     x:
       description: X / Twitter browsing and usage
       title: X / Twitter

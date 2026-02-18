@@ -17,6 +17,7 @@
   "exports": {
     ".": "./src/index.ts",
     "./beat-sync": "./src/beat-sync/index.ts",
+    "./vision": "./src/vision/index.ts",
     "./electron-renderer": "./src/electron-renderer.d.ts",
     "./composables": "./src/composables/index.ts"
   },
